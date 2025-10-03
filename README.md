@@ -8,7 +8,7 @@ Esse projeto tem o intuito de por em prática todo o conhecimento adquirido na t
 - **Demonstrar domínio técnico das ferramentas e metodologias do curso,** apresentando ao vivo funcionalidades dos dashboards, explicando escolhas técnicas, validando modelos estatísticos e respondendo questões sobre implementação e limitações das soluções desenvolvidas.
 - **Avaliar criticamente o projeto e propor evoluções futuras,** identificando limitações da análise realizada, sugerindo melhorias metodológicas, apresentando roadmap de desenvolvimento e estabelecendo métricas de sucesso para monitoramento contínuo da solução.
 
-  ## Requisitos
+  ### Requisitos
 
 - **Limpeza e Transformação:** Trataram dados, criaram variáveis derivadas
 - **Análise Exploratória:** Descobriram padrões, formularam hipóteses
@@ -53,16 +53,61 @@ FIPS Code(Código FIPS - Padrão Federal de Processamento de Informações) → 
 Offshore Region(Região Offshore) → Indica se a produção ocorre em áreas marítimas ( offshore), como plataformas oceânicas.
 
 
-Commodity → Tipo de recurso extraído: petróleo bruto,gás natural,condensado,etc.
+Commodity(Produto) → Tipo de recurso extraído: petróleo bruto,gás natural,condensado,etc.
 
 
-Disposition Code → Código que representa o destino do produto ( ex:vendido,reinjetado,queimado).
+Disposition Code(Código de Destinação) → Código que representa o destino do produto ( ex:vendido,reinjetado,queimado).
 
 
-Disposition Description → Descrição textual do destino do produto.
+Disposition Description(Descrição da Destinação) → Descrição textual do destino do produto.
 
 
-Volume → Quantidade produzida,geralmente em barris (petróleo) ou pés cúbicos (gás).
+Volume(Volume) → Quantidade produzida,geralmente em barris (petróleo) ou pés cúbicos (gás).
+
+
+### Categoria  de algumas colunas
+
+Existem colunas com categorias específicas que traz a informação classificação e categoria do terreno, locais que possuem offshore e os tipos produto, essas colunas são:
+
+  * Land Class
+  * Land Category
+  * Offshore Region
+  * Commodity
+
+Na coluna Land Class possui as categorias:
+
+* Federal
+* Mixed Exploratory(Misto Exploratório)
+* Native American(Terra Nativa)
+
+Na coluna Land Category possui as categorias:
+
+* Onshore(extração de petróleo e gás em terra firme)
+* Offshore(extração de petróleo e gás no mar)
+
+Na coluna Offshore Region possui as categorias:
+
+* Offshore Gulf
+* Offshore Pacific
+* Offshore Alaska
+
+
+---
+
+
+## Etapa II tratamento e limpeza dos dados
+
+
+Explorando o dataset foi encontrado valores nulos nas colunas State,County,FIPS Code e Offshore Region, e essas colunas possuem uma grande quantidade de valores que ao fazer a limpeza dos dados, teve impacto nos dados apagando boa parte das linhas do dataset podendo afetar nas análises que fossem feitas. Por isso foi decido a deixar os valores nulos presentes no dataset. 
+
+
+
+
+  
+  
+
+
+
 
 
 
