@@ -191,7 +191,7 @@ Foram utilizadas funções de agregação e contagem cruzada (groupby) para rela
   <img width="528" height="403" alt="image" src="https://github.com/user-attachments/assets/47d35ab1-7721-492b-9734-c57fa19c4110" />
 - Classificando o volume produzido por mês:
   
-  <img width="683" height="521" alt="image" src="https://github.com/user-attachments/assets/80294da4-fa1f-44e5-b72e-c7d82aff48ae" />
+  <img width="1589" height="790" alt="image" src="https://github.com/user-attachments/assets/0c296809-0c8f-4a9d-906a-3b43ab160a0c" />
 
 -Produção por Classe de solo:
 
